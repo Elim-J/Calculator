@@ -1,0 +1,50 @@
+body {
+    padding: 0 400px;
+}
+
+.container {
+    background-color: #212f38;
+    display:flex;
+    flex-direction: column;
+    margin-top: 100px;
+    padding: 50px 0 40px 0;
+    border-radius: 6px;
+}
+
+.number-display {
+    background-color: white;
+    width: 506px;
+    height: 100px;
+    align-self: center;
+    margin-bottom: 8px;
+    border-radius: 6px;
+}
+
+.clear-delete {
+    display: flex;
+    gap: 4px;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+.clear-delete button{
+    width: 252px;
+    gap: 4px;
+    background-color: #e93838;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-bottom: 4px;
+}
+
+button {
+    padding: 20px 60px;
+    background-color: #334753;
+    width: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 6px;
+}
