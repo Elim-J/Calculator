@@ -2,14 +2,6 @@ function add(a,b){
     render(parseInt(a) + parseInt(b));
 }
 
-function subtract(a,b){
-    render(parseInt(a) - parseInt(b));
-}
-
-function multiply(a,b){
-    render(parseInt(a) * parseInt(b));
-}
-
 function divide(a, b){
     if(parseInt(b) === 0){
         alert("You can't divide by zero!");
@@ -17,8 +9,17 @@ function divide(a, b){
         render(parseInt(a) / parseInt(b));
     }
 }
+
 function exponent(a, b){
     render(parseInt(a) ** parseInt(b));
+}
+
+function multiply(a,b){
+    render(parseInt(a) * parseInt(b));
+}
+
+function subtract(a,b){
+    render(parseInt(a) - parseInt(b));
 }
 
 function evaluate(){
@@ -71,6 +72,18 @@ function appendOperator(e){
     
 }
 
+//clear entire expression and render 0
+function clear(){
+    expression = "";
+    render(0);
+}
+
+//remove last char from expression
+function deleteLastChar(){
+    expression = expression.slice(0, -1);
+    (expression === "") ? render(0) : render(expression);
+}
+
 //display expression and answer
 function render(answer){
     calculatorScreen.textContent = answer;
@@ -92,6 +105,8 @@ let plusBtn = document.getElementById('plus');
 let exponentBtn = document.getElementById('exponent');
 
 let equalBtn = document.getElementById('equal');
+let clearBtn = document.getElementById('clear');
+let deleteBtn = document.getElementById('delete');
 let calculatorScreen = document.getElementById('number-display');
 
 
@@ -103,6 +118,8 @@ plusBtn.addEventListener('click', appendOperator);
 exponentBtn.addEventListener('click', appendOperator);
 
 equalBtn.addEventListener('click', evaluate);
+clearBtn.addEventListener('click', clear);
+deleteBtn.addEventListener('click', deleteLastChar);
 
 
 
