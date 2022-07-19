@@ -1,12 +1,11 @@
 body {
-    padding: 0 400px;
+    padding: 0 700px;
 }
 
 .container {
     background-color: #212f38;
     display:flex;
     flex-direction: column;
-    /* margin-top: 100px; */
     margin: 100px auto;
     padding: 50px 0 40px 0;
     border-radius: 6px;
@@ -14,12 +13,17 @@ body {
 }
 
 #number-display {
+    display: flex;
+    align-items: center;
+    justify-content: end;
     background-color: white;
-    width: 506px;
+    width: 490px;
     height: 100px;
     align-self: center;
     margin-bottom: 8px;
     border-radius: 6px;
+    font-size: 40px;
+    padding-right: 15px;
 }
 
 .clear-delete {
@@ -47,6 +51,6 @@ button {
     width: 100px;
     color: white;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 6px;
 }
