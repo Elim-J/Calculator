@@ -13,7 +13,7 @@ body {
     min-width: 550px;
 }
 
-.number-display {
+#number-display {
     background-color: white;
     width: 506px;
     height: 100px;
